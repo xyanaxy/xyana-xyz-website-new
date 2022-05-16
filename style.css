@@ -20,10 +20,8 @@ body {
   src: url(fonts/PicNic-Regular.otf);
 }
 
-
-a {
- text-decoration: none !important;
- color: black;
+a{
+  color: inherit;
 }
 
 .section {
@@ -137,7 +135,7 @@ input:checked + .slider:before {
 
 
 .section--list{
-  height: 100vh;
+  height: 80%;
   width: 100vw;
 }
 
@@ -205,4 +203,59 @@ input:checked + .slider:before {
 .main__navigation{
   font-family: Picnic;
 
+}
+
+.section--navigation {
+  padding: 40px;
+}
+
+
+.navigation__inner {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+
+}
+
+.main__navigation{
+  font-family: Picnic;
+   color: pink;
+}
+
+
+.main__navigation a:link  {
+  font-size: 70px;
+ text-decoration: none;
+  -webkit-text-stroke: 1px #23430C;
+  text-shadow: -1px 1px 2px #000,
+  				  1px 1px 2px #000,
+  				  1px -1px 0 #000,
+  				  -1px -1px 0 #000;
+ padding-left: 20px;
+}
+
+.main__navigation a:hover  {
+  text-decoration: none;
+  color: ;
+}
+
+.navigation__column {
+  width: 90%;
+  display: inline;
+}
+
+.external__links {
+  font-family: Grotesque_medium;
+  font-size: 40px;
+  margin-top:20px;
+  margin-left: 450px;
+}
+
+.external__links a:link{
+  padding-left: 20px;
+  text-decoration: line-through;
+}
+
+.external__links a:hover{
+  text-decoration: none;
 }
