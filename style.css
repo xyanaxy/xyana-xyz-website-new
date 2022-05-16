@@ -149,10 +149,15 @@ input:checked + .slider:before {
 .text--line:hover {
   animation: marqueeLine 10s infinite;
   animation-timing-function: linear;
-  animation-iteration-count: 3;
-
+  animation-fill-mode: both;
 }
 
+.text--line:not(:hover){
+    animation: stopMarqueeLine 3s;
+    animation-duration: 250ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: both;
+}
 
 
 @keyframes marqueeLine {
@@ -162,5 +167,14 @@ input:checked + .slider:before {
 
   to {
     transform: translateX(-100%);
+  }
+}
+@keyframes stopMarqueeLine {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-10%);
   }
 }
