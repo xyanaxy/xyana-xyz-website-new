@@ -153,9 +153,9 @@ input:checked + .slider:before {
 }
 
 .text--line:not(:hover){
-    animation: stopMarqueeLine 3s;
-    animation-duration: 250ms;
-    animation-delay: 1000ms;
+    animation: stopMarqueeLine 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10ms;
     animation-fill-mode: both;
 }
 
@@ -171,10 +171,10 @@ input:checked + .slider:before {
 }
 @keyframes stopMarqueeLine {
   from {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 
   to {
-    transform: translateX(-10%);
+    transform: translateX(0%);
   }
 }
