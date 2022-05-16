@@ -4,15 +4,15 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 
-const blueCircle = document.createElement('img');
-const yellowCircle = document.createElement('img');
+const pinkCircle = document.createElement('img');
+const greenCircle = document.createElement('img');
 const blackCircle = document.createElement('img');
 
-blueCircle.src = 'images/bluecircle.png';
-yellowCircle.src = 'images/greencircle.png';
-blackCircle.src = 'images/blackcircle.png';
+pinkCircle.src = 'images/pink.png';
+greenCircle.src = 'images/green.png';
+blackCircle.src = 'images/black.png';
 
-let paintbrush = blueCircle;
+let paintbrush = greenCircle;
 
 const context = canvas.getContext('2d');
 
@@ -25,12 +25,12 @@ const handleMouseMove = (event) => {
 
 const handleClick = () => {
 
- if(paintbrush === blueCircle) {
-    paintbrush = yellowCircle;
-} else if (paintbrush === yellowCircle) {
+ if(paintbrush === greenCircle) {
     paintbrush = blackCircle;
 } else if (paintbrush === blackCircle) {
-    paintbrush = blueCircle;
+    paintbrush = pinkCircle;
+} else if (paintbrush === pinkCircle) {
+    paintbrush = greenCircle;
 }
 
 }
