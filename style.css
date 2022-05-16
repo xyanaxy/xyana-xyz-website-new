@@ -1,0 +1,166 @@
+html,
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #D62AEF;
+  font-family: helvetica, sans-serif;
+  font-size: 12pt;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section {
+   position: fixed;
+  width: 100vw;
+}
+
+.section--top {
+
+ height:100vh;
+}
+
+.header--logo{
+  padding-top: 5%;
+  padding-left: 35%;
+  display: block;
+  position: relative;
+  height: auto;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.img--logo{
+  width: 50vh;
+}
+
+.img--question{
+
+}
+
+#drawingCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.menu--section{
+ bottom: 30px;
+ left: 93%;
+ position: fixed;
+ height: auto;
+ z-index: 2;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 64px;
+ height: 36.5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: transparent;
+ border: 2px solid black;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 34px;
+ width: 34px;
+ bottom: 0.1px;
+ background-color: black;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: transparent;
+ border: 2px solid black;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 0.2px #2196F3;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(27px);
+ -ms-transform: translateX(27px);
+ transform: translateX(27px);
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 32px;
+}
+
+.slider.round:before {
+ border-radius: 54%;
+}
+
+.section--list{
+  height: 100vh;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.text--moving {
+  overflow: hidden;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: uppercase;
+  background-color: #FFDC00;
+  margin-bottom: 15px;
+}
+
+
+.text--line {
+ flex-shrink: 0;
+ white-space: nowrap;
+}
+
+.text--line:hover {
+  animation: marqueeLine 10s infinite;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+
+}
+
+
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
