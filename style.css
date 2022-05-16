@@ -25,13 +25,15 @@ a{
 }
 
 .section {
-   position: fixed;
+  position: fixed;
   width: 100vw;
 }
 
 .section--top {
  height:100vh;
 }
+
+
 
 .header--logo{
   padding-top: 5%;
@@ -49,8 +51,13 @@ a{
 }
 
 .img--question{
-
+  margin-left: 10px;
+  margin-top: 30px;
+  height: 90px;
+  position: relative;
+  z-index: 3;
 }
+
 
 #drawingCanvas {
   position: absolute;
@@ -225,7 +232,8 @@ input:checked + .slider:before {
 
 .main__navigation a:link  {
   font-size: 70px;
- text-decoration: none;
+  text-decoration: none;
+  color: #ffffff;
   -webkit-text-stroke: 1px #23430C;
   text-shadow: -1px 1px 2px #000,
   				  1px 1px 2px #000,
