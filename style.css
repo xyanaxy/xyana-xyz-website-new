@@ -21,24 +21,24 @@ body {
 }
 
 a{
-  color: inherit;
+  color: #000000;
 }
 
 .section {
-  position: fixed;
   width: 100vw;
 }
 
 .section--top {
  height:100vh;
+ position: sticky;
+ position: -webkit- sticky;
+ top:50px;
 }
 
 
 
 .header--logo{
-
   padding-left: 35%;
-
 }
 
 .img--logo{
@@ -52,9 +52,9 @@ a{
 }
 
 .img--question{
-  padding-left: 10px;
+  padding-left: 20px;
   padding-top: 30px;
-  height: 90px;
+  height: 70px;
   position: relative;
   z-index: 3;
 }
@@ -80,8 +80,8 @@ a{
 .switch {
  position: relative;
  display: inline-block;
- width: 64px;
- height: 36.5px;
+ width: 65px;
+ height: 38px;
 }
 
 /* Hide default HTML checkbox */
@@ -110,20 +110,17 @@ a{
  content: "";
  height: 34px;
  width: 34px;
- bottom: 0.1px;
  background-color: black;
  -webkit-transition: .4s;
  transition: .4s;
 }
 
 input:checked + .slider {
- background-color: transparent;
+ background-color: hotpink;
  border: 2px solid black;
 }
 
-input:focus + .slider {
- box-shadow: 0 0 0.2px #2196F3;
-}
+
 
 input:checked + .slider:before {
  -webkit-transform: translateX(27px);
@@ -133,17 +130,20 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
- border-radius: 32px;
+ border-radius: 39px;
 }
 
 .slider.round:before {
- border-radius: 54%;
+ border-radius: 90%;
 }
 
 
 
 .section--list{
   height: 80%;
+  position: sticky;
+  position: -webkit- sticky;
+  top:0;
   width: 100vw;
 }
 
@@ -198,6 +198,7 @@ input:checked + .slider:before {
     transform: translateX(-100%);
   }
 }
+
 @keyframes stopMarqueeLine {
   from {
     transform: translateX(-100%);
@@ -234,13 +235,8 @@ input:checked + .slider:before {
 .main__navigation a:link  {
   font-size: 70px;
   text-decoration: none;
-  color: #ffffff;
-  -webkit-text-stroke: 1px #23430C;
-  text-shadow: -1px 1px 2px #000,
-  				  1px 1px 2px #000,
-  				  1px -1px 0 #000,
-  				  -1px -1px 0 #000;
- padding-left: 20px;
+  color: #000000;
+  padding-left: 20px;
 }
 
 .main__navigation a:hover  {
