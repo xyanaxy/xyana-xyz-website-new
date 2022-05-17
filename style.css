@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #D62AEF;
   font-family: helvetica, sans-serif;
-  font-size: 12pt;
+  font-size: 16pt;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -24,15 +24,14 @@ a{
   color: #000000;
 }
 
-.section {
+section {
   width: 100vw;
 }
 
-.section--top {
+
+
+section.section--top {
  height:100vh;
- position: sticky;
- position: -webkit- sticky;
- top:50px;
 }
 
 
@@ -44,19 +43,19 @@ a{
 .img--logo{
   padding-top: 5%;
   width: 50vh;
-  position: relative;
+  position: fixed;
   height: auto;
-  left: 0;
+  align-items: center;
   z-index: 3;
   pointer-events: none;
 }
 
 .img--question{
-  padding-left: 20px;
-  padding-top: 30px;
+  padding-left: 470px;
+  padding-top: 75px;
   height: 70px;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 
@@ -68,13 +67,23 @@ a{
 }
 
 .menu--section{
- bottom: 30px;
- left: 93%;
+ left: 90%;
  position: fixed;
+ bottom: 30px;
  height: auto;
  z-index: 2;
 }
 
+p.switch--label {
+  font-size:30px;
+  line-height: normal;
+  font-family: Grotesque_medium;
+  display: inline;
+}
+
+.switch--label{
+ padding-top: 20px;
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -139,15 +148,15 @@ input:checked + .slider:before {
 
 
 
-.section--list{
+section.section--list{
   height: 80%;
   position: sticky;
   position: -webkit- sticky;
-  top:0;
-  width: 100vw;
+  top: 0px;
 }
 
 .portfolio--section{
+
 
 }
 
@@ -158,6 +167,7 @@ input:checked + .slider:before {
 
 .text--moving {
   overflow: hidden;
+  display: block;
 }
 
 .text--line a:link  {
@@ -209,15 +219,17 @@ input:checked + .slider:before {
   }
 }
 
-.main__navigation{
+
+
+section.section--navigation {
+  padding: 40px;
+
+}
+
+.main__navigation {
   font-family: Picnic;
 
 }
-
-.section--navigation {
-  padding: 40px;
-}
-
 
 .navigation__inner {
   width: 100%;
