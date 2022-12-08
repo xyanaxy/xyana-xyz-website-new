@@ -20,6 +20,7 @@ body {
   src: url(fonts/PicNic-Regular.otf);
 }
 
+
 a{
   color: #000000;
 }
@@ -169,6 +170,17 @@ input:checked + .slider:before {
  border-radius: 89%;
 }
 
+<<<<<<< HEAD
+=======
+
+
+.section--list{
+  height: 100vh;
+  width: 100vw;
+}
+
+.portfolio--section{
+>>>>>>> edb0ec783934fb004b444268ae3a6d85292c5b11
 
 
 section.section--list{
@@ -178,11 +190,14 @@ section.section--list{
   top: 0px;
 }
 
+<<<<<<< HEAD
 .portfolio--section{
 
 
 }
 
+=======
+>>>>>>> edb0ec783934fb004b444268ae3a6d85292c5b11
 .border{
   border: 1px solid #000000;
   width: 100vw;
@@ -190,7 +205,10 @@ section.section--list{
 
 .text--moving {
   overflow: hidden;
+<<<<<<< HEAD
   display: block;
+=======
+>>>>>>> edb0ec783934fb004b444268ae3a6d85292c5b11
 }
 
 .text--line a:link  {
@@ -200,7 +218,11 @@ section.section--list{
 }
 
 .text--line a:hover  {
+<<<<<<< HEAD
   color: white;
+=======
+  color: ;
+>>>>>>> edb0ec783934fb004b444268ae3a6d85292c5b11
 }
 
 .text--line {
@@ -242,6 +264,7 @@ section.section--list{
   }
 }
 
+<<<<<<< HEAD
 
 
 section.section--navigation {
@@ -431,4 +454,9 @@ section.section--navigation {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
  background: #114CF5;
+=======
+.main__navigation{
+  font-family: Picnic;
+
+>>>>>>> edb0ec783934fb004b444268ae3a6d85292c5b11
 }
