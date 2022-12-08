@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xyana.xyz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+<section class="sticky section--top">
+<div class="header--logo">
+    <img class="img--logo xyana--logo" alt="XYANA logo" src="images/logo.png">
+     <!--  <a href="#" target="_blank"><img class="img--question" alt="about XYANA" src="images/question.png"></a>-->
+</div>
+<div class="menu--section">
+   <!-- Rounded switch -->
+   <div class="rounded--switch">
+     <p class = "switch--label">Griddd</p>
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
+     </div>
+</div>
+</section>
+
+<!-- Picture carousel -->
+<section>
+  <!-- Slideshow container -->
+<div class="slideshow-container fade">
+
+ <!-- Full images with numbers and message Info -->
+ <div class="Containers">
+   <div class="MessageInfo">1 / 3</div>
+   <img src="./images/grass-interface-1.jpg" style="width:100%">
+ </div>
+
+ <div class="Containers">
+   <div class="MessageInfo">2 / 3</div>
+   <img src="./images/grass-interface-2.png" style="width:100%">
+ </div>
+
+ <div class="Containers">
+   <div class="MessageInfo">3 / 3</div>
+   <img src="./images/grass-interface-3.png" style="width:100%">
+ </div>
+
+ <!-- Back and forward buttons -->
+ <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+ <span class="dots" onclick="currentSlide(1)"></span>
+ <span class="dots" onclick="currentSlide(2)"></span>
+ <span class="dots" onclick="currentSlide(3)"></span>
+</div>
+</section>
+
+<section class="sticky section--navigation">
+<div class="navigation__inner">
+  <div class="navigation__column">
+    <nav class="main__navigation">
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">New</a>
+    </nav>
+  </div>
+
+  <div class="navigation__column">
+    <nav class="external__links">
+      <a href="#" target="_blank">git</a>
+      <a href="mailto:xy@xyana.xyz" target="_blank">mail</a>
+      <a href="https://www.instagram.com/xyana.xyz/" target="_blank">insta</a>
+    </nav>
+  </div>
+</div>
+</section>
+
+<script src="script-carousel.js"></script>
+
+
+  </body>
+
+</html>

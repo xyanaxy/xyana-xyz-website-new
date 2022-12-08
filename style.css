@@ -24,6 +24,23 @@ a{
   color: #000000;
 }
 
+p{
+font-family: Grotesque_medium;
+font-size: 48px;
+text-align: left;
+}
+
+h1{
+  font-family: Picnic;
+  font-size: 72px;
+  text-align: center;
+}
+.description--text{
+ padding-top: 10%;
+ padding-left: 10%;
+ padding-right: 10%;
+}
+
 section {
   width: 100vw;
 }
@@ -74,15 +91,21 @@ section.section--top {
  z-index: 2;
 }
 
+.rounded--switch{
+}
+
+
 p.switch--label {
   font-size:30px;
   line-height: normal;
   font-family: Grotesque_medium;
-  display: inline;
+
 }
 
 .switch--label{
- padding-top: 20px;
+position: relative;
+top:10px;
+display: inline;
 }
 
 /* The switch - the box around the slider */
@@ -109,7 +132,7 @@ p.switch--label {
  right: 0;
  bottom: 0;
  background-color: transparent;
- border: 2px solid black;
+ border: 2.3px solid black;
  -webkit-transition: .4s;
  transition: .4s;
 }
@@ -126,7 +149,7 @@ p.switch--label {
 
 input:checked + .slider {
  background-color: hotpink;
- border: 2px solid black;
+ border: 2.3px solid black;
 }
 
 
@@ -139,11 +162,11 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
- border-radius: 39px;
+ border-radius: 40px;
 }
 
 .slider.round:before {
- border-radius: 90%;
+ border-radius: 89%;
 }
 
 
@@ -177,7 +200,7 @@ section.section--list{
 }
 
 .text--line a:hover  {
-  color: hotpink;
+  color: white;
 }
 
 .text--line {
@@ -275,4 +298,137 @@ section.section--navigation {
 
 .external__links a:hover{
   text-decoration: none;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+
+#imageCarousel{
+    width:100vw;
+    height:100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#imageCarousel a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#imageCarousel img {
+  border: none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+ width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #114CF5;
 }
