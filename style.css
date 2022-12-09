@@ -8,6 +8,7 @@ body {
   font-size: 16pt;
   overflow-x: hidden;
   overflow-y: scroll;
+  scrollbar-color: #114CF5 #ffffff;
 }
 
 /* Width */
@@ -326,7 +327,6 @@ section.section--navigation {
 
 #imageCarousel{
     width:100vw;
-    height: 100vh;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -339,4 +339,5 @@ section.section--navigation {
 
 #imageCarousel img {
   border: none;
+  margin-right:-6p 
 }
