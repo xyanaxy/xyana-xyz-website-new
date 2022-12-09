@@ -10,6 +10,26 @@ body {
   overflow-y: scroll;
 }
 
+/* Width */
+::-webkit-scrollbar {
+ width:1%;
+}
+
+/* Track */
+::-webkit-scrollbar-track:hover {
+background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #114CF5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #000000;
+}
+
 @font-face {
   font-family: Grotesque_medium;
   src: url(fonts/DarkerGrotesque-Medium.ttf);
@@ -20,20 +40,40 @@ body {
   src: url(fonts/PicNic-Regular.otf);
 }
 
-a{
+a {
   color: #000000;
 }
+
+p {
+font-family: Grotesque_medium;
+font-size: 48px;
+text-align: left;
+}
+
+h1{
+  font-family: Grotesque_medium;
+  font-size: 56px;
+}
+
+
 
 section {
   width: 100vw;
 }
 
 
-
 section.section--top {
  height:100vh;
 }
 
+.description--text{
+ padding-top: 5%;
+ padding-left: 10%;
+ padding-right: 10%;
+ font-family: Grotesque_medium;
+ font-size: 48px;
+ text-align: left;
+}
 
 
 .header--logo{
@@ -74,15 +114,21 @@ section.section--top {
  z-index: 2;
 }
 
+.rounded--switch{
+}
+
+
 p.switch--label {
   font-size:30px;
   line-height: normal;
   font-family: Grotesque_medium;
-  display: inline;
+
 }
 
 .switch--label{
- padding-top: 20px;
+position: relative;
+top:10px;
+display: inline;
 }
 
 /* The switch - the box around the slider */
@@ -109,7 +155,7 @@ p.switch--label {
  right: 0;
  bottom: 0;
  background-color: transparent;
- border: 2px solid black;
+ border: 2.3px solid black;
  -webkit-transition: .4s;
  transition: .4s;
 }
@@ -126,7 +172,7 @@ p.switch--label {
 
 input:checked + .slider {
  background-color: hotpink;
- border: 2px solid black;
+ border: 2.3px solid black;
 }
 
 
@@ -139,11 +185,11 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
- border-radius: 39px;
+ border-radius: 40px;
 }
 
 .slider.round:before {
- border-radius: 90%;
+ border-radius: 89%;
 }
 
 
@@ -177,7 +223,7 @@ section.section--list{
 }
 
 .text--line a:hover  {
-  color: hotpink;
+  color: white;
 }
 
 .text--line {
@@ -275,4 +321,22 @@ section.section--navigation {
 
 .external__links a:hover{
   text-decoration: none;
+}
+
+
+#imageCarousel{
+    width:100vw;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#imageCarousel a {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+#imageCarousel img {
+  border: none;
 }
