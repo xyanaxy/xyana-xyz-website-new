@@ -21,10 +21,13 @@
    <div class="rounded--switch">
      <p class = "switch--label">Griddd</p>
   <label class="switch">
-    <input type="checkbox">
+    <input type="checkbox" id="myonoffswitch">
     <span class="slider round"></span>
   </label>
-     </div>
+</div>
+
+
+
 </div>
 </section>
 
@@ -100,7 +103,7 @@
 
   <div class="navigation__column">
     <nav class="external__links">
-      <a href="#" target="_blank">git</a>
+      <a href="https://github.com/xyanaxy" target="_blank">git</a>
       <a href="mailto:xy@xyana.xyz" target="_blank">mail</a>
       <a href="https://www.instagram.com/xyana.xyz/" target="_blank">insta</a>
     </nav>
@@ -109,6 +112,9 @@
 </section>
 
 <script src="script.js"></script>
+<script>  document.getElementById('myonoffswitch').addEventListener("change", function(){
+      if (this.checked) window.location.href = 'http://www.xyana.xyz';});
+</script>
 
   </body>
 
