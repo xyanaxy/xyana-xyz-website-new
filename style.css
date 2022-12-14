@@ -69,6 +69,7 @@ section.section--top {
 
 .description--text{
  padding-top: 5%;
+ padding-bottom: 5%;
  padding-left: 10%;
  padding-right: 10%;
  font-family: Grotesque_medium;
@@ -339,4 +340,5 @@ section.section--navigation {
 
 #imageCarousel img {
   border: none;
+  margin-right: -6px;
 }
