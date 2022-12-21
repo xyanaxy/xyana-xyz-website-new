@@ -5,28 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>xyana.xyz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-iodine.css">
   </head>
 
   <body>
 
 <section class="sticky section--top">
-<div class="header--logo">
-    <img class="img--logo xyana--logo" alt="XYANA logo" src="images/logo.png">
-     <!--  <a href="#" target="_blank"><img class="imgquestion" alt="about XYANA" src="images/question.png"></a>-->
-</div>
-<div class="menu--section">
-   <!-- Rounded switch -->
-   <div class="rounded--switch">
-     <p class = "switch--label">Griddd</p>
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label>
-     </div>
-</div>
+  <div class="description--text">
+    <p>
+    <h1>Iodine time-machine</h1> This project is situated around the installation Iodine time-machine. Its aim is to discover the entanglements of nuclear technology. In particular, the focus lies in the exclusion zone - a 30km zone around the Charnobyl nuclear reactor. This view into the zone helps show an advanced laboratory of the consequences and long-term legacies of irradiated waste colonialism.
+    </p>
+  </div>
 </section>
 
+<div class="description--text">
+    <p>
+The discovery of radiation helped to unlock the deep time of present and future. Radiometric clocks are used to predict the age of rocks and other mineral materials through radiation decay. The deep future is connecting us to the unknown - how long will it take for radiation pollution to decay? From various nuclear tests and sinking of nuclear submarines in the ocean, from technogenic catastrophes (of or pertaining to a process or substance created by human technology; anthropogenic, manmade;). The connection between the nuclear and the cosmical from radium - a shining element found in uranium and compared to the sun - to cosmos exploration and the particles of radioactive dust spreading into the soil and air around the Earth.
+   </p>
+</div>
+
+<div class= "drop">
+  <lottie-player id="firstLottie" src="https://assets7.lottiefiles.com/packages/lf20_E2vIY812gt.json" style="width:400px; height: 400px;">"></lottie-player>
+</div>
+
+<div class="description--text">
+    <p>
+      As Svitlana Matviyenko said in her 𝔗𝔥𝔢𝔯𝔪𝔬𝔫𝔲𝔠𝔩𝔢𝔞𝔯 ℭ𝔶𝔟𝔢𝔯𝔴𝔞𝔯 lecture at 0x.salon: “The Charnobyl reactor opened its potential right now.” [1] And indeed, the full scale invasion of Ukraine by Russia unlocked some critical time in recent history. Disturbing the untouched nature of the exclusion zone, where nature despite radiation recovered to the levels before humans. The land of Ukraine is getting contaminated with chemicals from rockets and mines, like some time ago the land of Paliessie - a region in North of Ukraine, South Belarus and partially in Poland and Russia - was contaminated with radiation. As pollution from Charnobyl spread around the globe and traces are still found in fungi, animals and through food supply chains it is distributed globally. The same way, pollution from wars spreads around the globe and beyond, possibly to the cosmos.
+   </p>
+</div>
 
 <section class="sticky section--navigation">
 <div class="navigation__inner">
@@ -49,7 +55,21 @@
 </section>
 
 <script src="script-carousel.js"></script>
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+<script>
+LottieInteractivity.create({
+    mode:"scroll",
+    player:'#firstLottie',
+    actions: [
+        {
+            visibility:[0,1],
+            type: "seek",
+            frames: [0, 252],
+        },
+    ]
+});
+</script>
 
   </body>
 
