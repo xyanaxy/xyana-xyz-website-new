@@ -18,15 +18,30 @@
   </div>
 </section>
 
+<section>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/787621407?h=a023e837db&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Vypramieńvannie/Radioactivity 2022"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</section>
+
+
 <div class="description--text">
     <p>
 The discovery of radiation helped to unlock the deep time of present and future. Radiometric clocks are used to predict the age of rocks and other mineral materials through radiation decay. The deep future is connecting us to the unknown - how long will it take for radiation pollution to decay? From various nuclear tests and sinking of nuclear submarines in the ocean, from technogenic catastrophes (of or pertaining to a process or substance created by human technology; anthropogenic, manmade;). The connection between the nuclear and the cosmical from radium - a shining element found in uranium and compared to the sun - to cosmos exploration and the particles of radioactive dust spreading into the soil and air around the Earth.
    </p>
 </div>
 
+
+<div class="dropingCont">
 <div class= "drop">
-  <lottie-player id="firstLottie" src="https://assets7.lottiefiles.com/packages/lf20_E2vIY812gt.json" style="width:400px; height: 400px;">"></lottie-player>
+  <lottie-player id="firstLottie" src="https://assets7.lottiefiles.com/packages/lf20_E2vIY812gt.json" style="width:400px; height: 400px;"></lottie-player>
 </div>
+<div class= "drop">
+  <lottie-player id="secondLottie" src="https://assets7.lottiefiles.com/packages/lf20_E2vIY812gt.json" style="width:400px; height: 400px;"></lottie-player>
+</div>
+<div class= "drop">
+  <lottie-player id="thirdLottie" src="https://assets7.lottiefiles.com/packages/lf20_E2vIY812gt.json" style="width:400px; height: 400px;"></lottie-player>
+</div>
+</div>
+
 
 <div class="description--text">
     <p>
@@ -34,13 +49,53 @@ The discovery of radiation helped to unlock the deep time of present and future.
    </p>
 </div>
 
+<section>
+  <div id="imageCarousel">
+    <img src="./images/iodine-time--machine/iodine-time-4.png" style="width:90%">
+     <img src="./images/iodine-time--machine/iodine-time-3.png" style="width:90%">
+     <img src="./images/iodine-time--machine/iodine-time-2.png" style="width:90%">
+     <img src="./images/iodine-time--machine/iodine-time-5.png" style="width:90%">
+     <img src="./images/iodine-time--machine/iodine-time-1.png" style="width:90%">
+     <img src="./images/iodine-time--machine/iodine-time-6.png" style="width:90%">
+     <img src="./images/iodine-time--machine/iodine-time-8.png" style="width:90%">
+     <img src="./images/iodine-time--machine/iodine-time-9.png" style="width:90%">
+ </div>
+</section>
+
+
+<section><div class="description--text">
+<h1>Exhibitions</h1>
+<p>
+    <i>
+  J22 jahresausstellung hfk-
+  11 nov - 16 nov 2022--
+  blg forum, bremen
+</i>
+</p>
+<h1>Prizes</h1>
+<p>
+    <i>
+  frieze design award 2022-
+  jury mention
+</i>
+</p>
+<br>
+<h2>
+  #moving images, #wood, #concrete, #metal, #plastic, #glass, #starch, #water, #valves, #wires, #pcb, #arduino, #iodine solution, #potato
+
+</h2>
+
+  </div>
+</section>
+
+
 <section class="sticky section--navigation">
 <div class="navigation__inner">
   <div class="navigation__column">
     <nav class="main__navigation">
       <a href="#">About</a>
       <a href="#">Blog</a>
-      <a href="index-list.html">Home</a>
+      <a href="index_list.html">Home</a>
     </nav>
   </div>
 
@@ -54,13 +109,38 @@ The discovery of radiation helped to unlock the deep time of present and future.
 </div>
 </section>
 
-<script src="script-carousel.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 <script>
 LottieInteractivity.create({
     mode:"scroll",
     player:'#firstLottie',
+    actions: [
+        {
+            visibility:[0,1],
+            type: "seek",
+            frames: [0, 252],
+        },
+    ]
+});
+</script>
+<script>
+LottieInteractivity.create({
+    mode:"scroll",
+    player:'#secondLottie',
+    actions: [
+        {
+            visibility:[0,1],
+            type: "seek",
+            frames: [0, 252],
+        },
+    ]
+});
+</script>
+<script>
+LottieInteractivity.create({
+    mode:"scroll",
+    player:'#thirdLottie',
     actions: [
         {
             visibility:[0,1],

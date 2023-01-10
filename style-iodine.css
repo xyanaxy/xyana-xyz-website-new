@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-color: #114CF5 #ffffff;
-  
+
 }
 
 /* Width */
@@ -305,7 +305,7 @@ section.section--navigation {
 
 .main__navigation a:hover  {
   text-decoration: none;
-  color: ;
+  color: #FFFFFF;
 }
 
 .navigation__column {
@@ -395,4 +395,14 @@ section.section--navigation {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px;
     background-color: #27A1CA;
+}
+
+.drop{
+  display: inline-block;
+}
+
+.dropingCont{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: -3%;
 }

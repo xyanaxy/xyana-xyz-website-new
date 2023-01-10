@@ -113,7 +113,7 @@ section.section--top {
 
 .menu--section{
  left: 90%;
- position: fixed;
+ position:absolute;
  bottom: 30px;
  height: auto;
  z-index: 2;
@@ -204,11 +204,6 @@ section.section--list{
   position: sticky;
   position: -webkit- sticky;
   top: 0px;
-}
-
-.portfolio--section{
-
-
 }
 
 .border{
@@ -304,7 +299,7 @@ section.section--navigation {
 
 .main__navigation a:hover  {
   text-decoration: none;
-  color: ;
+  color: #FFFFFF;
 }
 
 .navigation__column {
