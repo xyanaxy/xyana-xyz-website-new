@@ -1,6 +1,5 @@
 html,
 body {
-  width: 100vw;
   margin: 0;
   padding: 0;
   background-color: #D62AEF;
@@ -42,6 +41,7 @@ background: #ffffff;
 }
 
 a {
+text-decoration: none;
   color: #000000;
 }
 
@@ -61,14 +61,6 @@ h2{
   font-size: 24px;
 }
 
-section {
-  width: 100vw;
-}
-
-
-section.section--top {
- height:100vh;
-}
 
 .description--text{
  padding-top: 5%;
@@ -104,12 +96,6 @@ section.section--top {
 }
 
 
-#drawingCanvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
 
 .menu--section{
  left: 90%;
@@ -196,14 +182,6 @@ input:checked + .slider:before {
  border-radius: 89%;
 }
 
-
-
-section.section--list{
-  height: 80%;
-  position: sticky;
-  position: -webkit- sticky;
-  top: 0px;
-}
 
 .border{
   border: 1px solid #000000;
@@ -323,23 +301,6 @@ section.section--navigation {
 }
 
 
-#imageCarousel{
-    width:100vw;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-#imageCarousel a {
-    display: inline-block;
-    vertical-align: middle;
-
-}
-
-#imageCarousel img {
-  border: none;
-  margin-right: -6px;
-}
-
 
 .onoffswitch {
     position: relative; width: 200px;
@@ -390,3 +351,39 @@ section.section--navigation {
     right: 0px;
     background-color: #27A1CA;
 }
+
+.photos {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .photo {
+    /*display: inline-block;*/
+    position: relative;
+    width: 500px;
+    margin: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  } 
+  
+  .photo:hover .overlay {
+    opacity: 1;
+  }
+
+  h2.no-style--link{
+    font-size: 32pt;
+  }
