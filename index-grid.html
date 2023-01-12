@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>xyana.xyz</title>
     <link rel="stylesheet" href="grid.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -15,9 +16,9 @@
      <!--  <a href="#" target="_blank"><img class="imgquestion" alt="about XYANA" src="images/question.png"></a>-->
 </div>
 <canvas id="drawingCanvas"></canvas>
-<div class="menu--section">
+<div class="menu--section"id="slider">
    <!-- Rounded switch -->
-   <div class="rounded--switch">
+   <div class="rounded--switch" >
      <p class = "switch--label">Lissst</p>
   <label class="switch">
     <input type="checkbox" id="myonoffswitch2" checked/>
@@ -34,11 +35,11 @@
     <h2 class="no-style--link"> <a href="./iodine-time-machine-2022.html" >
       Radioactivity</a></h2>
   </div>
-    <img src="./images/iodine-time--machine/iodine-time-1.png" alt="iodine-time--machine" style="width:100%">
+    <img src="./images/iodine-time--machine/iodine-time-6.png" alt="iodine-time--machine" style="width:100%">
   </div>
 
    <div class="photo">
-  <div class="overlay">
+  <div class="overlay2">
     <h2 class="no-style--link">
       <a href="./smell-interface-2021-2022.html">
       Smell interface</a></h2>
@@ -47,7 +48,7 @@
 </div>
 
 <div class="photo">
-  <div class="overlay">
+  <div class="overlay3">
     <h2 class="no-style--link"><a href="./grass-interface-2020.html">
       Grass interface
     </a></h2>
@@ -56,19 +57,19 @@
 </div>
 
 <div class="photo">
-  <div class="overlay">
+  <div class="overlay4">
     <h2 class="no-style--link"><a href="./grass-interface-2020.html">
-      Grass interface
+      High technology park
     </a></h2>
   </div>
-  <img src="./images/grass-interface--img/grass-interface-1.jpg" alt="" style="width:70%">
+  <img src="./images/grass-interface--img/grass-interface-1.jpg" alt="" style="width:100%">
 </div>
 
 
 <div class="photo">
-  <div class="overlay">
+  <div class="overlay5">
     <h2 class="no-style--link"><a href="./grass-interface-2020.html">
-      Grass interface
+      Design feed
     </a></h2>
   </div>
   <img src="./images/grass-interface--img/grass-interface-1.jpg" alt="" style="width:100%">
@@ -80,9 +81,9 @@
 <div class="navigation__inner">
   <div class="navigation__column">
     <nav class="main__navigation">
-      <a href="#">About</a>
+      <a href="about.html">About</a>
       <a href="#">Blog</a>
-      <a href="#">New</a>
+      <a href="iodine-time-machine-2022.html">New</a>
     </nav>
   </div>
   <div class="navigation__column">
@@ -102,6 +103,17 @@
   }});
 </script>
 
+
+<script>
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.rounded--switch').fadeOut();
+  } else {
+    $('.rounded--switch').fadeIn();
+  }
+});
+  </script>
+  
 </body>
 
 </html>
