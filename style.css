@@ -180,7 +180,6 @@ input:checked + .slider {
 }
 
 
-
 input:checked + .slider:before {
  -webkit-transform: translateX(27px);
  -ms-transform: translateX(27px);
@@ -341,7 +340,7 @@ section.section--navigation {
 }
 
 
-.onoffswitch {
+/* .onoffswitch {
     position: relative; width: 200px;
     user-select: none;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
@@ -389,4 +388,4 @@ section.section--navigation {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px;
     background-color: #27A1CA;
-}
+} */
