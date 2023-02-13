@@ -320,7 +320,6 @@ section.section--navigation {
 
 #imageCarousel{
     width:100vw;
-    height: 100vh;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
