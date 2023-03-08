@@ -1,0 +1,71 @@
+/* everything on the page*/
+body {
+    font-family: "PT Sans";
+    font-size: 24px;
+    background-color: #000000;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  
+  a {
+   color: rgba(255, 255, 255, 1); 
+    /* remove underline */
+    text-decoration: none;
+  }
+  
+  section {
+    height: 110vh;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .image_1 {
+      background-image:url(./images/portfolio--img/images.001.jpg);
+  }
+  
+  .image_2 {
+     background-image:url(./images/portfolio--img/images.002.jpg);
+  }
+  
+  .image_3 {
+     background-image:url(./images/portfolio--img/images.003.jpg);
+  }
+  
+  .image_4 {
+    background-image:url(./images/portfolio--img/images.004.jpg);
+  }
+  
+  .image_5 {
+    background-image:url(./images/portfolio--img/images.005.jpg);
+  }
+  
+  .image_6 {
+    background-image:url(./images/portfolio--img/images.006.jpg);
+  }
+  
+  .image_7 {
+    background-image:url(./images/portfolio--img/images.007.jpg);
+  }
+  .image_8 {
+    background-image:url(./images/portfolio--img/images.008.jpg);
+  }
+  
+  .image_9 {
+    background-image:url(./images/portfolio--img/images.009.jpg);
+  }
+  
+
+  
+  @media (max-width: 450px) {
+    section {
+    height: 30vh;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+    }
+  
+  
+  
+  
+  
+  
