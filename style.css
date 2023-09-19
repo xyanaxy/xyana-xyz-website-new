@@ -341,7 +341,9 @@ section.section--navigation {
 }
 
 
+@media only screen and (max-width: 600px) {
 
+<<<<<<< HEAD
 @media only screen and (max-width: 600px) {
   html,
 body {
@@ -745,4 +747,346 @@ section.section--navigation {
   section.section--navigation ul li a {
       font-size: 24px;
   }
+=======
+  p {
+    font-family: Grotesque_medium;
+    font-size: 48px;
+    text-align: left;
+    }
+    
+    h1{
+      font-family: Grotesque_medium;
+      font-size: 56px;
+    }
+    
+    h2{
+      font-family: Grotesque_regular;
+      font-size: 24px;
+    }
+    
+    
+    .description--text{
+     padding-top: 5%;
+     padding-bottom: 5%;
+     padding-left: 10%;
+     padding-right: 10%;
+     font-family: Grotesque_medium;
+     font-size: 48px;
+     text-align: left;
+    }
+    
+    
+    .header--logo{
+      padding-left: 35%;
+    }
+    
+    .img--logo{
+      padding-top: 5%;
+      width: 50vh;
+      position: fixed;
+      height: auto;
+      align-items: center;
+      z-index: 3;
+      pointer-events: none;
+    }
+    
+    .img--question{
+      padding-left: 470px;
+      padding-top: 75px;
+      height: 70px;
+      position: relative;
+      z-index: 4;
+    }
+    
+    
+    
+    .menu--section{
+    left: 90%;
+     position:fixed;
+     bottom: 30px;
+     height: auto;
+     z-index: 2;
+    }
+    
+    p.switch--label {
+        font-size:30px;
+        line-height: normal;
+        font-family: Grotesque_medium;
+      
+      }
+      
+      .switch--label{
+      position: relative;
+      top:10px;
+      display: inline;
+      }
+      
+      /* The switch - the box around the slider */
+      .switch {
+       position: relative;
+       display: inline-block;
+       width: 65px;
+       height: 38px;
+      }
+      
+      /* Hide default HTML checkbox */
+      .switch input {
+       opacity: 0;
+       width: 0;
+       height: 0;
+      }
+      
+      /* The slider */
+      .slider {
+       position: absolute;
+       cursor: pointer;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-color: transparent;
+       border: 2.3px solid black;
+       -webkit-transition: .4s;
+       transition: .4s;
+      }
+      
+      .slider:before {
+       position: absolute;
+       content: "";
+       height: 34px;
+       width: 34px;
+       background-color: black;
+       -webkit-transition: .4s;
+       transition: .4s;
+      }
+      
+      input:checked + .slider {
+       background-color: white;
+       border: 2.3px solid black;
+      }
+      
+      
+      input:checked + .slider:before {
+       -webkit-transform: translateX(27px);
+       -ms-transform: translateX(27px);
+       transform: translateX(27px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+       border-radius: 40px;
+      }
+      
+      .slider.round:before {
+       border-radius: 89%;
+      }
+        
+    
+    
+    .border{
+      border: 1px solid #000000;
+      width: 100vw;
+    }
+    
+    .text--moving {
+      overflow: hidden;
+      display: block;
+    }
+    
+    .text--line a:link  {
+      font-size: 60px;
+      font-family: Grotesque_medium;
+      text-decoration: none !important;
+    }
+    
+    .text--line a:hover  {
+      color: white;
+    }
+    
+    .text--line {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    
+    .text--line:hover {
+      animation: marqueeLine 10s infinite;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+    }
+    
+    .text--line:not(:hover){
+        animation: stopMarqueeLine 10s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 10ms;
+        animation-fill-mode: both;
+    }
+    
+    
+    @keyframes marqueeLine {
+      from {
+        transform: translateX(0%);
+      }
+    
+      to {
+        transform: translateX(-100%);
+      }
+    }
+    
+    @keyframes stopMarqueeLine {
+      from {
+        transform: translateX(-100%);
+      }
+    
+      to {
+        transform: translateX(0%);
+      }
+    }
+    
+    
+    
+    section.section--navigation {
+      padding: 40px;
+    
+    }
+    
+    .main__navigation {
+      font-family: Picnic;
+    
+    }
+    
+    .navigation__inner {
+      width: 100%;
+      display: flex;
+      padding-top: 20px;
+    
+    }
+    
+    .main__navigation{
+      font-family: Picnic;
+       color: pink;
+    }
+    
+    
+    .main__navigation a:link  {
+      font-size: 70px;
+      text-decoration: none;
+      color: #000000;
+      padding-left: 20px;
+    }
+    
+    .main__navigation a:hover  {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+    
+    .navigation__column {
+      width: 90%;
+      display: inline;
+    }
+    
+    .external__links {
+      font-family: Grotesque_medium;
+      font-size: 40px;
+      margin-top:20px;
+      margin-left: 450px;
+    }
+    
+    .external__links a:link{
+      padding-left: 20px;
+      text-decoration: line-through;
+    }
+    
+    .external__links a:hover{
+      text-decoration: none;
+    }
+    
+    .photos {
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5%;
+      }
+      .photo {
+        /*display: inline-block;*/
+        position: relative;
+        width: 500px;
+        margin: 10px;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: -70px;
+        left: -10px;
+        width: 100%;
+        height: 100%; 
+        opacity: 0;
+        transition: opacity 0.3s;
+      } 
+    
+      .overlay2 {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        width: 100%;
+        height: 100%; 
+        opacity: 0;
+        transition: opacity 0.3s;
+      } 
+      .overlay3 {
+        position: absolute;
+        top: 170px;
+        right: -30px;
+        width: 100%;
+        height: 100%; 
+        opacity: 0;
+        transition: opacity 0.3s;
+      } 
+      .overlay4 {
+        position: absolute;
+        bottom: 10px;
+        left: 100px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s; 
+      } 
+      .overlay5 {
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        width: 100%;
+        height: 100%; 
+        opacity: 0;
+        transition: opacity 0.3s;
+      } 
+      
+      .photo:hover .overlay {
+        opacity: 1;
+      }.photo:hover .overlay1 {
+        opacity: 1;
+      }.photo:hover .overlay2 {
+        opacity: 1;
+      }.photo:hover .overlay3 {
+        opacity: 1;
+      }.photo:hover .overlay4 {
+        opacity: 1;
+      }.photo:hover .overlay5 {
+        opacity: 1;
+      }
+      h2.no-style--link a{
+        font-size: 40pt;
+        color: #ffffff;
+      }
+    
+      h2.no-style--link a:hover{
+        font-size: 40pt;
+        color: #75FA5D;
+      }
+>>>>>>> a53d4a9f29d5aab677a61a78d4da8fe901910fda
 }
