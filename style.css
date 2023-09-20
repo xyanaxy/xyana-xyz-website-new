@@ -118,7 +118,7 @@ section.section--top {
 }
 
 .menu--section{
- left: 89.2%;
+ float: left;
  position:absolute;
  bottom: 30px;
  height: auto;
