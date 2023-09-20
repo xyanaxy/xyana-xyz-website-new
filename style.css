@@ -340,3 +340,22 @@ section.section--navigation {
   margin-right: -6px;
 }
 
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  p {
+    font-size: 24px;
+    }
+    
+    h1{
+      font-size: 28px;
+    }
+    
+    h2{
+      font-size: 12px;
+    }
+    
+    h3{
+      font-size: 18px;
+    }
+}
