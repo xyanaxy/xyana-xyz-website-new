@@ -87,14 +87,13 @@ section.section--top {
 
 
 .header--logo{
- 
-}
-
-.img--logo{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.img--logo{
   padding-top: 5%;
   width: 50vh;
   height: auto;
