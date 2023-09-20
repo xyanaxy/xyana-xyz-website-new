@@ -87,16 +87,16 @@ section.section--top {
 
 
 .header--logo{
-  display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+ 
 }
 
 .img--logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding-top: 5%;
   width: 50vh;
-  position: fixed;
   height: auto;
   z-index: 3;
   pointer-events: none;
