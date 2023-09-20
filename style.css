@@ -368,6 +368,10 @@ section.section--navigation {
     }
 
     .img--logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       padding-top: 7%;
       width: 20vh;
     }
