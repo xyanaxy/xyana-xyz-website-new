@@ -364,6 +364,11 @@ section.section--navigation {
      }
 
      .header--logo{
-      padding-left: 15%;
+      padding-left: 0%;
+    }
+
+    .img--logo{
+      padding-top: 7%;
+      width: 30vh;
     }
 }
