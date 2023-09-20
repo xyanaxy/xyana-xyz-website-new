@@ -343,7 +343,7 @@ section.section--navigation {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-  p {
+    p {
     font-size: 24px;
     }
     
@@ -357,5 +357,13 @@ section.section--navigation {
     
     h3{
       font-size: 18px;
+    }
+
+    section.section--top {
+      height:50vh;
+     }
+
+     .header--logo{
+      padding-left: 15%;
     }
 }
