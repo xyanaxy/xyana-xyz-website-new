@@ -118,7 +118,7 @@ section.section--top {
 }
 
 .menu--section{
- float: left;
+ left: 89.2%;
  position:absolute;
  bottom: 30px;
  height: auto;
@@ -370,4 +370,9 @@ section.section--navigation {
       padding-top: 7%;
       width: 30vh;
     }
+
+    .menu--section{
+      left: 50%;
+    
+     }
 }
