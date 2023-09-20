@@ -87,7 +87,10 @@ section.section--top {
 
 
 .header--logo{
-  padding-left: 35%;
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
 }
 
 .img--logo{
@@ -95,7 +98,6 @@ section.section--top {
   width: 50vh;
   position: fixed;
   height: auto;
-  align-items: center;
   z-index: 3;
   pointer-events: none;
 }
@@ -363,15 +365,9 @@ section.section--navigation {
       height:50vh;
      }
 
-     .header--logo{
-      padding-left: 0%;
-    }
+
 
     .img--logo{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       padding-top: 7%;
       width: 20vh;
     }
