@@ -102,7 +102,7 @@ h2{
 
 
 .menu--section{
-left: 90%;
+ right: 10px;
  position:fixed;
  bottom: 30px;
  height: auto;
