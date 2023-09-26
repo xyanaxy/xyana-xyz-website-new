@@ -118,12 +118,12 @@ section.section--top {
 }
 
 .menu--section{
- left: 89.2%;
- position:absolute;
- bottom: 30px;
- height: auto;
- z-index: 2;
-}
+  left: 89.2%;
+  position:absolute;
+  bottom: 30px;
+  height: auto;
+  z-index: 2;
+ }
 
 p.switch--label {
   font-size:30px;
@@ -372,7 +372,6 @@ section.section--navigation {
     }
 
     .menu--section{
-      left: 50%;
-    
+
      }
 }
