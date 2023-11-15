@@ -9,9 +9,16 @@
   </head>
 
   <body>
-
-<p>coming soon coming soon coming soon coming soon coming soon coming soon coming</p>
-
+<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+<section>
+    <div id="myEmbeddedScene">
+      <a-scene embedded>
+        <a-entity gltf-model="url(./model.glb)"></a-entity>
+        <a-entity camera look-controls wasd-controls="acceleration:50"  position="-40 0.6 -95" rotation="-180 0 0 "></a-entity>
+      </a-scene>
+    </div>
+  </section>
+  
 <section>
   <div id="imageCarousel">
      <img src="./images/htp--img/htp-2.jpg" alt="htp" style="width:70%">

@@ -341,6 +341,14 @@ section.section--navigation {
   margin-right: -6px;
 }
 
+#myEmbeddedScene{
+  width:100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
 
 /* Mobile Styles */
 @media (max-width: 600px) {
