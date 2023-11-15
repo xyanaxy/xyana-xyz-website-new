@@ -342,10 +342,7 @@ section.section--navigation {
 }
 
 #myEmbeddedScene{
-  width:100vw;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+    width:100vw;
 }
 
 
