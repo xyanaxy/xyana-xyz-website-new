@@ -78,16 +78,17 @@ h2 {
 }
 
 
-.header--logo {
-  padding-left: 35%;
+.header--logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.img--logo {
+.img--logo{
   padding-top: 5%;
   width: 50vh;
-  position: fixed;
   height: auto;
-  align-items: center;
   z-index: 3;
   pointer-events: none;
 }
@@ -416,7 +417,7 @@ h2.no-style--link a:hover {
   .main__navigation a:hover,.main__navigation a:active  {
     color: #FFFFFF;
   }
-  
+
   p {
     font-size: 24px;
   }
