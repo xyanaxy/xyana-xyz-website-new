@@ -470,27 +470,27 @@ h2.no-style--link a:hover {
 
 
   .overlay {
-  display: block;
+  display: none;
   }
   
   .overlay2 {
 
-  display: block;
+  display: none;
    
   }
   
   .overlay3 {
-    display: block;
+    display: none;
 
   }
   
   .overlay4 {
-    display: block;
+    display: none;
    
   }
   
   .overlay5 {
-    display: block;
+    display: none;
  
   }
 }
