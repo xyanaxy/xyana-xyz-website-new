@@ -347,7 +347,6 @@ section.section--navigation {
   margin-right: -6px;
 }
 
-
 .onoffswitch {
     position: relative; width: 200px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
@@ -405,4 +404,33 @@ section.section--navigation {
   padding-left: 10%;
   padding-right: 10%;
   margin-top: -3%;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  p {
+  font-size: 24px;
+  }
+  
+  h1{
+    font-size: 28px;
+  }
+  
+  h2{
+    font-size: 12px;
+  }
+  
+  h3{
+    font-size: 18px;
+  }
+
+
+
+  .img--logo{
+    padding-top: 7%;
+    width: 30vh;
+  }
+
+ 
 }
