@@ -373,13 +373,15 @@ a-scene {
     h3{
       font-size: 18px;
     }
-
-  
-
+    
     .img--logo{
       padding-top: 7%;
       width: 30vh;
     }
 
+    #imageCarousel{
+      width:120vw;
+      
+  }
    
 }
