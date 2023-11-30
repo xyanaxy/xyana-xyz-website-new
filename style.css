@@ -71,6 +71,7 @@ section {
 }
 
 
+
 section.section--top {
  height:100vh;
 }
@@ -358,10 +359,21 @@ a-scene {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-    p {
+  .text--line a:hover,.text--line a:active {
+    color: white;
+  }
+
+  .main__navigation a:hover,.main__navigation a:active  {
+    color: #FFFFFF;
+  }
+
+  
+  
+  p {
     font-size: 24px;
     }
-    
+  
+
     h1{
       font-size: 28px;
     }

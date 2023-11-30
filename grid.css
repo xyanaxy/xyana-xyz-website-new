@@ -413,6 +413,10 @@ h2.no-style--link a:hover {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
+  .main__navigation a:hover,.main__navigation a:active  {
+    color: #FFFFFF;
+  }
+  
   p {
     font-size: 24px;
   }
@@ -465,36 +469,27 @@ h2.no-style--link a:hover {
 
 
   .overlay {
-   
-    top: -30px;
-    left: -10px;
+  display: block;
   }
   
   .overlay2 {
 
-    top: 40px;
-   right: -30px;
+  display: block;
    
   }
   
   .overlay3 {
- 
-    top: 30px;
-    right: -80px;
+    display: block;
 
   }
   
   .overlay4 {
- 
-    bottom: -10px;
-    left: 30px;
+    display: block;
    
   }
   
   .overlay5 {
-
-    top: -40px;
-    right: -20px;
+    display: block;
  
   }
 }

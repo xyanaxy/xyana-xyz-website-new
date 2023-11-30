@@ -39,7 +39,6 @@ canvas.addEventListener('click', handleClick);
 
 // Add both mouse and touch event listeners
 canvas.addEventListener('mousemove', handleDraw);
-canvas.addEventListener('mousedown', handleClick); // You may adjust this based on your specific requirements
+canvas.addEventListener('mousedown', handleClick); 
 
 canvas.addEventListener('touchmove', handleDraw);
-canvas.addEventListener('touchstart', handleClick); // You may adjust this based on your specific requirements

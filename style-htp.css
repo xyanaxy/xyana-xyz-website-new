@@ -42,7 +42,7 @@ background: #ffffff;
 }
 
 a {
-  color: #ffffff;
+  color: #000000;
 }
 
 p {
@@ -373,6 +373,10 @@ a-scene {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
+  .main__navigation a:hover,.main__navigation a:active  {
+    color: #FFFFFF;
+  }
+  
   p {
   font-size: 24px;
   }

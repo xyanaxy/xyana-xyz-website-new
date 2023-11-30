@@ -164,6 +164,11 @@ section.section--navigation {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
+
+  .main__navigation a:hover,.main__navigation a:active  {
+    color: #FFFFFF;
+  }
+  
   p {
     font-size: 24px;
   }
