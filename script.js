@@ -41,3 +41,4 @@ canvas.addEventListener('mousemove', handleDraw);
 canvas.addEventListener('mousedown', handleClick); 
 
 canvas.addEventListener('touchmove', handleDraw);
+canvas.addEventListener('touchstart', handleClick);
