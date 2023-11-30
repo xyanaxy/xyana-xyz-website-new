@@ -13,22 +13,22 @@ body {
 
 /* Width */
 ::-webkit-scrollbar {
- width:1%;
+  width: 1%;
 }
 
 /* Track */
 ::-webkit-scrollbar-track:hover {
-background: #ffffff;
+  background: #ffffff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
- background: #114CF5;
+  background: #114CF5;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
- background: #000000;
+  background: #000000;
 }
 
 @font-face {
@@ -46,22 +46,22 @@ a {
 }
 
 p {
-font-family: Grotesque_medium;
-font-size: 48px;
-text-align: left;
+  font-family: Grotesque_medium;
+  font-size: 48px;
+  text-align: left;
 }
 
-h1{
+h1 {
   font-family: Grotesque_medium;
   font-size: 56px;
 }
 
-h2{
+h2 {
   font-family: Grotesque_medium;
   font-size: 24px;
 }
 
-h3{
+h3 {
   font-family: Grotesque_medium;
   font-size: 36px;
 }
@@ -72,19 +72,18 @@ section {
 
 
 section.section--top {
- height:100vh;
+  height: 100vh;
 }
 
-.description--text{
- padding-top: 5%;
- padding-bottom: 5%;
- padding-left: 10%;
- padding-right: 10%;
- font-family: Grotesque_medium;
- font-size: 48px;
- text-align: left;
+.description--text {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: Grotesque_medium;
+  font-size: 48px;
+  text-align: left;
 }
-
 
 
 section.section--navigation {
@@ -130,7 +129,7 @@ section.section--navigation {
   font-family: Grotesque_medium;
   font-size: 40px;
   margin-top:20px;
-  margin-left: 450px;
+  margin-left: 58%;
 }
 
 .external__links a:link{
@@ -143,19 +142,76 @@ section.section--navigation {
 }
 
 
-#imageCarousel{
-    width:100vw;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+#imageCarousel {
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
+
 #imageCarousel a {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 
 }
 
 #imageCarousel img {
   border: none;
   margin-right: -6px;
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  p {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .img--logo {
+    padding-top: 7%;
+    width: 30vh;
+  }
+
+  #imageCarousel {
+    width: 120vw;
+  }
+
+
+  section.section--navigation {
+    padding: 20px;
+
+  }
+
+  .navigation__inner {
+    width: 80%;
+
+  }
+
+  .main__navigation {
+    font-family: Picnic;
+    font-style:  uppercase;
+  }
+
+
+  .main__navigation a:link {
+    font-size: 45px;
+  }
+
+  .external__links {
+    margin-top: 0px;
+  }
+
 }

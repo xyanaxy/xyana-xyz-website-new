@@ -373,29 +373,54 @@ a-scene {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-    p {
-    font-size: 24px;
-    }
-    
-    h1{
-      font-size: 28px;
-    }
-    
-    h2{
-      font-size: 12px;
-    }
-    
-    h3{
-      font-size: 18px;
-    }
-
-    .img--logo{
-      padding-top: 7%;
-      width: 30vh;
-    }
-
-    #imageCarousel{
-      width:120vw; 
+  p {
+  font-size: 24px;
   }
   
+  h1{
+    font-size: 28px;
+  }
+  
+  h2{
+    font-size: 12px;
+  }
+  
+  h3{
+    font-size: 18px;
+  }
+  
+  .img--logo{
+    padding-top: 7%;
+    width: 30vh;
+  }
+
+  #imageCarousel{
+    width:120vw;  
+}
+ 
+
+section.section--navigation {
+padding: 20px;
+
+}
+
+.navigation__inner {
+width: 80%;
+
+}
+
+.main__navigation{
+font-family: Picnic;
+font-style: uppercase;
+}
+
+
+.main__navigation a:link  {
+font-size: 45px;
+}
+
+.external__links {
+margin-top: 0px;
+}
+
 }

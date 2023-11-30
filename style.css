@@ -380,8 +380,32 @@ a-scene {
     }
 
     #imageCarousel{
-      width:120vw;
-      
+      width:120vw;  
   }
    
+
+section.section--navigation {
+  padding: 20px;
+
+}
+
+.navigation__inner {
+  width: 80%;
+
+}
+
+.main__navigation{
+  font-family: Picnic;
+  font-style: uppercase;
+}
+
+
+.main__navigation a:link  {
+  font-size: 45px;
+}
+
+.external__links {
+  margin-top: 0px;
+}
+
 }
