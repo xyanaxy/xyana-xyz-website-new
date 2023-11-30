@@ -16,6 +16,8 @@ let paintbrush = greenCircle;
 const context = canvas.getContext('2d');
 
 const handleDraw = (event) => {
+  event.preventDefault(); // Prevent default behavior to avoid scrolling or zooming
+
   const drawEvent = event.type.startsWith('touch') ? event.touches[0] : event;
   const left = drawEvent.clientX;
   const top = drawEvent.clientY;
