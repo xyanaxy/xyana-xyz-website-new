@@ -1,0 +1,486 @@
+html,
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #D62AEF;
+  font-family: helvetica, sans-serif;
+  font-size: 16pt;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-color: #114CF5 #ffffff;
+}
+
+/* Width */
+::-webkit-scrollbar {
+ width:1%;
+}
+
+/* Track */
+::-webkit-scrollbar-track:hover {
+background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #114CF5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #000000;
+}
+
+@font-face {
+  font-family: Grotesque_medium;
+  src: url(fonts/DarkerGrotesque-Medium.ttf);
+}
+
+@font-face {
+  font-family: Picnic;
+  src: url(fonts/PicNic-Regular.otf);
+}
+
+a {
+  color: #000000;
+}
+
+p {
+font-family: Grotesque_medium;
+font-size: 48px;
+text-align: left;
+}
+
+h1{
+  font-family: Grotesque_medium;
+  font-size: 56px;
+}
+
+h2{
+  font-family: Grotesque_medium;
+  font-size: 24px;
+}
+
+h3{
+  font-family: Grotesque_medium;
+  font-size: 36px;
+}
+
+section {
+  width: 100vw;
+}
+
+
+
+section.section--top {
+ height:100vh;
+}
+
+.description--text{
+ padding-top: 5%;
+ padding-bottom: 5%;
+ padding-left: 10%;
+ padding-right: 10%;
+ font-family: Grotesque_medium;
+ font-size: 48px;
+ text-align: left;
+}
+
+
+.header--logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img--logo{
+  padding-top: 5%;
+  width: 50vh;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.img--question{
+  padding-left: 470px;
+  padding-top: 75px;
+  height: 70px;
+  position: relative;
+  z-index: 4;
+}
+
+
+#drawingCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.menu--section{
+  right: 10px;
+  position:absolute;
+  bottom: 30px;
+  height: auto;
+  z-index: 2;
+ }
+
+p.switch--label {
+  font-size:30px;
+  line-height: normal;
+  font-family: Grotesque_medium;
+
+}
+
+.switch--label{
+position: relative;
+top:10px;
+display: inline;
+}
+
+/* The switch - the box around the slider */
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 65px;
+ height: 38px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: transparent;
+ border: 2.3px solid black;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 34px;
+ width: 34px;
+ background-color: black;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: white;
+ border: 2.3px solid black;
+}
+
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(27px);
+ -ms-transform: translateX(27px);
+ transform: translateX(27px);
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 40px;
+}
+
+.slider.round:before {
+ border-radius: 89%;
+}
+
+
+
+section.section--list{
+  height: 80%;
+  position: sticky;
+  position: -webkit- sticky;
+  top: 0px;
+}
+
+.border{
+  border: 1px solid #000000;
+  width: 100vw;
+}
+
+.text--moving {
+  overflow: hidden;
+  display: block;
+}
+
+.text--line a:link  {
+  font-size: 60px;
+  font-family: Grotesque_medium;
+  text-decoration: none !important;
+}
+
+.text--line a:hover  {
+  color: white;
+}
+
+.text--line {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.text--line:hover {
+  animation: marqueeLine 10s infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.text--line:not(:hover){
+    animation: stopMarqueeLine 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10ms;
+    animation-fill-mode: both;
+}
+
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes stopMarqueeLine {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
+section.section--navigation {
+  padding: 40px;
+
+}
+
+.main__navigation {
+  font-family: Picnic;
+
+}
+
+.navigation__inner {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+
+}
+
+.main__navigation{
+  font-family: Picnic;
+}
+
+
+.main__navigation a:link  {
+  font-size: 70px;
+  text-decoration: none;
+  color: #000000;
+  padding-left: 20px;
+}
+
+.main__navigation a:hover  {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.navigation__column {
+  width: 90%;
+  display: inline;
+}
+
+.external__links {
+  font-family: Grotesque_medium;
+  font-size: 40px;
+  margin-top:20px;
+  margin-left: 50%;
+}
+
+.external__links a:link{
+  padding-left: 20px;
+  text-decoration: line-through;
+}
+
+.external__links a:hover{
+  text-decoration: none;
+}
+
+
+#imageCarousel{
+    width:100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#imageCarousel a {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+#imageCarousel img {
+  border: none;
+  margin-right: -6px;
+}
+
+a-scene {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#myEmbeddedScene{
+  width: 100%;
+  height: 700px;
+}
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .text--line a:hover,.text--line a:active {
+    color: white;
+  }
+
+  .main__navigation a:hover,.main__navigation a:active  {
+    color: #FFFFFF;
+  }
+
+  
+  
+  p {
+    font-size: 24px;
+    }
+  
+
+    h1{
+      font-size: 28px;
+    }
+    
+    h2{
+      font-size: 12px;
+    }
+    
+    h3{
+      font-size: 18px;
+    }
+    
+    .img--logo{
+      padding-top: 7%;
+      width: 30vh;
+    }
+
+    #imageCarousel{
+      width:120vw;  
+  }
+   
+
+section.section--navigation {
+  padding: 20px;
+
+}
+
+.navigation__inner {
+  width: 80%;
+
+}
+
+.main__navigation{
+  font-family: Picnic;
+  font-style: uppercase;
+}
+
+
+.main__navigation a:link  {
+  font-size: 45px;
+}
+
+.external__links {
+  margin-top: 0px;
+}
+
+}
+
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width:1200px){
+  .main__navigation a:hover,.main__navigation a:active  {
+    color: #FFFFFF;
+  }
+  
+  p {
+  font-size: 30px;
+  }
+  
+  h1{
+    font-size: 40px;
+  }
+  
+  h2{
+    font-size: 18px;
+  }
+  
+  h3{
+    font-size: 18px;
+  }
+  
+  .img--logo{
+    padding-top: 7%;
+    width: 30vh;
+  }
+
+  #imageCarousel{
+    width:120vw;  
+}
+ 
+
+section.section--navigation {
+padding: 10px;
+
+}
+
+.navigation__inner {
+width: 100%;
+
+}
+
+.main__navigation{
+font-family: Picnic;
+font-style: uppercase;
+}
+
+
+.main__navigation a:link  {
+font-size: 40px;
+}
+
+.external__links {
+margin-top: 0px;
+font-size: 25px;
+margin-left: 30%;
+}
+div.navigation__column {
+  width: 50%;
+}
+}
