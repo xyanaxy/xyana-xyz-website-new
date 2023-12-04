@@ -42,8 +42,12 @@ background: #ffffff;
 }
 
 a {
+  color: #ffffff;
+}
+a:hover {
   color: #000000;
 }
+
 
 p {
 font-family: Grotesque_medium;
@@ -298,13 +302,13 @@ section.section--navigation {
 .main__navigation a:link  {
   font-size: 70px;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   padding-left: 20px;
 }
 
 .main__navigation a:hover  {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .navigation__column {
@@ -316,10 +320,11 @@ section.section--navigation {
   font-family: Grotesque_medium;
   font-size: 40px;
   margin-top:20px;
-  margin-left: 58%;
+  margin-left: 50%;
 }
 
 .external__links a:link{
+  color: #ffffff;
   padding-left: 20px;
   text-decoration: line-through;
 }
@@ -374,7 +379,10 @@ a-scene {
 /* Mobile Styles */
 @media (max-width: 600px) {
   .main__navigation a:hover,.main__navigation a:active  {
-    color: #FFFFFF;
+    color: #000000;
+  }
+  .external__links a:hover,.external__links a:active  {
+    color: #000000;
   }
   
   p {
@@ -427,4 +435,67 @@ font-size: 45px;
 margin-top: 0px;
 }
 
+}
+
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width:1200px){
+  .main__navigation a:hover,.main__navigation a:active  {
+    color: #000000;
+  }
+  
+  p {
+  font-size: 30px;
+  }
+  
+  h1{
+    font-size: 40px;
+  }
+  
+  h2{
+    font-size: 18px;
+  }
+  
+  h3{
+    font-size: 18px;
+  }
+  
+  .img--logo{
+    padding-top: 7%;
+    width: 30vh;
+  }
+
+  #imageCarousel{
+    width:120vw;  
+}
+ 
+
+section.section--navigation {
+padding: 10px;
+
+}
+
+.navigation__inner {
+width: 100%;
+
+}
+
+.main__navigation{
+font-family: Picnic;
+font-style: uppercase;
+}
+
+
+.main__navigation a:link  {
+font-size: 40px;
+}
+
+.external__links {
+margin-top: 0px;
+font-size: 25px;
+margin-left: 30%;
+}
+div.navigation__column {
+  width: 50%;
+}
 }
